@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Istorija transakcije</title>
+    <link rel="stylesheet" href="/static/history.css">
+    <script>
+        //live filtriranje
+         $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="menu">
+    <h2 class="history">Istorija transakcija za korisnika {{ session.user.Ime }}</h2>
+    <a class="nalog" href="/account/account">Povratak na nalog</a>
+</div>
+<div id="divHistory" class="history">
+    <table class="history table-sortable" id="myTable">
+        <thead>
+        <tr class="trTransaction">
+            <th class="thTransaction">
+                Id transakcije
+            </th>
+            <th class="thTransaction">
+                Posiljalac
+            </th>
+            <th class="thTransaction">
+                Primalac
+            </th>
+            <th class="thTransaction">
+                Broj kartice korisnika
+            </th>
+            <th class="thTransaction">
+                Kolicina novca
+            </th>
+            <th class="thTransaction">
+                Status transakcije
+            </th>
+            <th class="thTransaction">
+                Valuta
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for podatak in podaci %}
+                      <tr class="thTransaction">
+                        <td class="tdTransaction">{{ podatak.IdTransakcije }}</td>
+                          <td class="tdTransaction">{{ podatak.Posiljalac }}</td>
+
+                          {% if podatak.Primalac == None %}
+                          <td class="tdTransaction">/</td>
+                           {% else %}
+                           <td class="tdTransaction">{{ podatak.Primalac }}</td>
+                          {% endif %}
+
+                          {% if podatak.BrojKarticeKorisnika == None %}
+                          <td class="tdTransaction">/</td>
+                          {% else %}
+                           <td class="tdTransaction">{{ podatak.BrojKarticeKorisnika }}</td>
+                          {% endif %}
+
+                        <td class="tdTransaction">{{ podatak.KolicinaNovca }}</td>
+                        <td class="tdTransaction">{{ podatak.StatusTransakcije }}</td>
+                          <td class="tdTransaction">{{ podatak.Valuta }}</td>
+                      </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <div>
+        <input type="text" id="myInput" class="filter" placeholder="Pretraga..."/>
+    </div>
+    <script src="/static/tablesort.js"></script>
+</div>
+</body>
+</html>

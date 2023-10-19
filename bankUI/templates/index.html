@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registracija</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+
+<h2 class="registracija">Registruj se</h2>
+<div class="registracija">
+<form action="/user/register" method="post">
+    <table class="registracija">
+        <thead>
+        <tr class="registracija">
+            <td>
+                Ime:
+            </td>
+            <td>
+                <input class="registracija" type="text" required name="ime" value="{{request.form.ime}}"/> #pomocu name taga
+                #pristupamo input polju, da procitamo sta je korisnik napisao
+            </td>
+        </tr>
+        <tr class="registracija">
+            <td>
+                Prezime:
+            </td>
+            <td>
+                <input class="registracija" type="text" required name="prezime" value="{{request.form.prezime}}"/>
+            </td>
+        </tr>
+        <tr class="registracija">
+            <td>
+                Adresa:
+            </td>
+            <td>
+                <input class="registracija" type="text" required name="adresa" value="{{request.form.adresa}}"/>
+            </td>
+        </tr>
+
+        <tr class="registracija">
+            <td>
+                Grad:
+            </td>
+            <td>
+                <input class="registracija" type="text" required name="grad" value="{{request.form.grad}}"/>
+            </td>
+        </tr>
+        <tr class="registracija">
+            <td>
+                Drzava:
+            </td>
+            <td>
+                <input class="registracija" type="text" required name="drzava" value="{{request.form.drzava}}"/>
+            </td>
+        </tr>
+        <tr class="registracija">
+            <td>
+                Broj telefona:
+            </td>
+            <td>
+                <input class="registracija" type="tel" required name="brojTelefona" value="{{request.form.brojTelefona}}" pattern="[0-9]{6-7}"/>
+            </td>
+        </tr>
+        <tr class="registracija">
+            <td>
+                Email:
+            </td>
+            <td>
+                <input class="registracija" type="email" required name="email" value="{{request.form.email}}"/>
+            </td>
+        </tr>
+        <tr class="registracija">
+            <td>
+                Lozinka:
+            </td>
+            <td>
+                <input class="registracija" type="password" required name="lozinka" value="{{request.form.lozinka}}"/>
+            </td>
+        </tr>
+        <tr class="registracija">
+            <td class="submit" colspan="2">
+                <input class="submit" type="submit" value="Registracija"/>
+            </td>
+        </tr>
+        </thead>
+    </table>
+</form>
+</div>
+<a href="/user/login">Prijavi se</a>
+</body>
+</html>

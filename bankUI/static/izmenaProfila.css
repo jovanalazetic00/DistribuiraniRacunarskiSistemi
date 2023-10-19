@@ -1,0 +1,71 @@
+
+    body {
+         background-image: url("../static/Background.jpeg");
+         background-size: cover;
+         font-family: OCR A Std, monospace;
+    }
+
+    h2.izmenaProfila {
+        margin-top: 4%;
+        margin-left: 30px;
+        text-align: left;
+        color: white;
+        font-size: 36px;
+    }
+
+    table.izmenaProfila {
+        margin-right: auto;
+        margin-left: 25px;
+        color: white;
+        border: 1px solid white;
+
+        border-spacing: 12px;
+    }
+
+
+    tr.izmenaProfila {
+        font-size: 180%;
+        color: white;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        margin-left: 450px;
+        font-size: 90%;
+        color: grey;
+        background-color: white;
+        border: 2px solid white;
+        padding: 3px 3px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    input.izmenaProfila {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+        padding: 4px;
+    }
+
+    select {
+        font-size: 90%;
+    }
+
+    .nalog {
+       text-decoration: none;
+       display: inline-block;
+       padding-top: 20px;
+       margin-left: 190px;
+       font-size: 26px;
+       color: white;
+       opacity: 2.0;
+    }
+
+    .nalog:hover {
+       color: red;
+    }

@@ -1,0 +1,191 @@
+  body {
+        background-image: url("../static/Background.jpeg");
+        background-size: cover;
+        font-family: OCR A Std, monospace;
+  }
+
+  .menu {
+       margin-top: 20px;
+       width: 100%;
+  }
+
+   .menu a {
+       float: right;
+       color: #f2f2f2;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 20px;
+   }
+
+   .menu a:hover {
+       background-color: #ddd;
+       color: black;
+   }
+
+   .lab {
+       margin-size:0%;
+   }
+
+   .balance {
+      color: white;
+      font-size: 20px;
+      margin-left: 180px;
+
+   }
+   .title {
+     color: white;
+     font-size: 36px;
+     margin-left: 20px;
+   }
+
+   .wrapper {
+      background: rgb(5, 68, 104);
+      position: fixed;
+      top: 100px;
+      left: 10px;
+      width: 300px;
+      height: 400px;
+      padding: 10px 0;
+   }
+
+    .float-container {
+         display: flex;
+         padding: 20px
+         height: auto;
+         width: 700px;
+    }
+
+    .float-container a {
+       float: left;
+       color: #f2f2f2;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 20px;
+    }
+
+    .ad{
+       list-style-type: none;
+
+    }
+    .float-container a:hover {
+       background-color: #ddd;
+       color: rgb(5, 68, 104);;
+   }
+
+   .not-verified {
+       margin-left: 50px;
+       color: red;
+       font-size: 20px;
+   }
+
+   .verified {
+       margin-left: 50px;
+       color: #00DD92;
+       font-size: 20px;
+   }
+
+   .float-child1 {
+        width: 300px;
+        padding: 10px;
+        float: left;
+    }
+
+    .float-child2 {
+        margin-top: 10%;
+        width: 400px;
+        height: 370px;
+        padding: 15px;
+        float: left;
+        margin-left: 10px;
+        background: rgb(5, 68, 104);
+    }
+
+   .card-number {
+        text-align: center;
+        margin-left: 20px;
+        width: 200px;
+        font-size: 16px;
+        border: 1px solid white;
+        border-radius: 10px;
+   }
+
+   .transfer-money {
+        text-align: center;
+        margin-left: 10px;
+        width: 200px;
+        font-size: 16px;
+        border: 1px solid white;
+        border-radius: 10px;
+   }
+
+    .select-currency1 {
+        text-align: center;
+        margin-left: 70px;
+        width: 200px;
+        font-size: 16px;
+        border: 1px solid white;
+        border-radius: 10px;
+        pointer-events: none;
+   }
+   .select-currency2 {
+        text-align: center;
+        margin-left: 70px;
+        width: 200px;
+        font-size: 16px;
+        border: 1px solid white;
+        border-radius: 10px;
+   }
+
+   .label {
+        color: white;
+   }
+
+   .brKartice td{
+        padding: 10px 5px;
+   }
+
+   .submit {
+         margin-left: 42%;
+         text-align: center;
+         width: 200px;
+         font-size: 16px;
+         border: 1px solid white;
+         border-radius: 10px;
+   }
+
+   .submit:hover {
+        background-color: rgb(5, 68, 104);
+        color: white;
+   }
+
+   .submitTransaction{
+          margin-left: 25%;
+         text-align: center;
+         width: 200px;
+         font-size: 16px;
+         border: 1px solid white;
+         border-radius: 10px;
+   }
+
+    .submitTransaction:hover {
+        background-color: rgb(5, 68, 104);
+        color: white;
+   }
+
+   .message {
+        text-align: right;
+        color: #d60000;
+   }
+
+   .tableTransaction, .trTransaction, .thTransaction, .tdTransaction {
+            border: 3px solid #FFFAFA;
+            align-content: center;
+
+  }
+  .thTransactionHead, .thTransaction{
+
+   color: #FFFAFA;
+
+  }

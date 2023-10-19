@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prijava</title>
+     <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+<h2 id="header-text">Prijava</h2>
+<div>
+    <form action="" method="post">
+        <table class="login">
+            <thead>
+            <tr class="login">
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input class="login" type="email" name="email" value="{{request.form.email}}"/>
+                </td>
+            </tr>
+            <tr class="login">
+                <td>
+                    Lozinka:
+                </td>
+                <td>
+                    <input class="login" type="password" name="password" value="{{request.form.password}}"/>
+                </td>
+            </tr>
+            {% if message %}
+            <tr class="message">
+                <td colspan="2" id="error-msg">{{ message }}</td>
+            </tr>
+            {% endif %}
+            <tr class="login">
+                <td class="submit" colspan="2">
+                    <input class="submit" type="submit" value="Prijava"/>
+                </td>
+            </tr>
+            </thead>
+        </table>
+    </form>
+
+    <a id="register-text" href="/user/">Registruj se</a>
+</div>
+</body>
+</html>

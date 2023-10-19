@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Izmena profila</title>
+    <link rel="stylesheet" href="/static/izmenaProfila.css">
+</head>
+<body>
+
+<h2 class="izmenaProfila">Izmeni korisnički profil</h2>
+<div class="izmenaProfila">
+<form action="" method="post">
+    <table class="izmenaProfila">
+        <thead>
+        <tr class="izmenaProfila">
+            <td>
+                Ime:
+            </td>
+            <td>
+                <input class="izmenaProfila" type="text" required name="ime" value="{{ session.user.Ime }}">
+            </td>
+        </tr>
+        <tr class="izmenaProfila">
+            <td>
+                Prezime:
+            </td>
+            <td>
+                <input class="izmenaProfila" type="text" required value="{{ session.user.Prezime }}" name="prezime"/>
+            </td>
+        </tr>
+        <tr class="izmenaProfila">
+            <td>
+                Adresa:
+            </td>
+            <td>
+                <input class="izmenaProfila" type="text" required value="{{ session.user.Adresa }}" name="adresa"/>
+            </td>
+        </tr>
+
+        <tr class="izmenaProfila">
+            <td>
+                Grad:
+            </td>
+            <td>
+                <input class="izmenaProfila" type="text" required value="{{ session.user.Grad }}" name="grad"/>
+            </td>
+        </tr>
+        <tr class="izmenaProfila">
+            <td>
+                Drzava:
+            </td>
+            <td>
+                <input class="izmenaProfila" type="text" required value="{{ session.user.Drzava }}" name="drzava"/>
+            </td>
+        </tr>
+        <tr class="izmenaProfila">
+            <td>
+                Broj telefona:
+            </td>
+            <td>
+                <input class="izmenaProfila" type="text" required value="0{{ session.user.BrojTelefona }}" name="brojTelefona" pattern="[0-9]{6-7}"/>
+            </td>
+        </tr>
+        <tr class="izmenaProfila">
+            <td>
+                Email:
+            </td>
+            <td>
+                <input readonly class="izmenaProfila" type="email" required value="{{ session.user.Email }}" name="email"/>
+            </td>
+        </tr>
+        <tr class="izmenaProfila">
+            <td>
+                Lozinka:
+            </td>
+            <td>
+                <input class="izmenaProfila" type="password"  required value="{{ session.user.Lozinka}}" name="lozinka"/>
+            </td>
+        </tr>
+        <tr class="izmenaProfila">
+            <td class="submit" colspan="2">
+                <input class="submit" type="submit" value="Izmeni"/>
+            </td>
+        </tr>
+        </thead>
+    </table>
+</form>
+</div>
+<a class="nalog" href="/account/account">Povratak na nalog</a>
+</body>
+</html>

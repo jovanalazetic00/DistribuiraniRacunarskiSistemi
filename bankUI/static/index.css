@@ -1,0 +1,74 @@
+
+    body {
+         background-image: url("../static/Background.jpeg");
+         background-size: cover;
+         font-family: OCR A Std, monospace;
+    }
+
+    h2.registracija {
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 20px;
+        font-size: 56px;
+        color: white;
+    }
+
+    table.registracija {
+        margin-right: auto;
+        margin-left: 25px;
+        color: white;
+        border: 1px solid white;
+        border-color: azure;
+        border-spacing: 12px;
+    }
+
+    tr.registracija {
+        font-size: 180%;
+        color: white;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        margin-left: 400px;
+        font-size: 90%;
+        color: grey;
+        background-color: white;
+        border: 2px solid white;
+        padding: 3px 3px;
+        border-radius: 10px;
+        font-size: 20px;
+
+    }
+
+    input.registracija {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+        padding: 5px;
+    }
+
+
+    select {
+        font-size: 90%;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 220px;
+        display: block;
+        font-size: 28px;
+        color: white;
+        opacity: 1.0;
+    }
+
+    a:hover {
+        color: red;
+    }
+

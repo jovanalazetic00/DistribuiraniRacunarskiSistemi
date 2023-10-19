@@ -1,0 +1,84 @@
+
+    body {
+        background-image: url("../static/Background.jpeg");
+        background-size: cover;
+        font-family: OCR A Std, monospace
+    }
+
+    table.login {
+        margin-right: auto;
+        margin-left: 25px;
+        color: azure;
+        border-style: solid;
+        border-color: white;
+        border-spacing: 25px;
+        border-width: 1px;
+        border-radius: 10px;
+    }
+
+    tr.login {
+        font-size: 180%;
+        color: white;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        margin-left: 360px;
+        font-size: 90%;
+        color: grey;
+        background-color: white;
+        border: 2px solid white;
+        padding: 3px 3px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    input.login {
+        font-size: 90%;
+        border-radius: 10px;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+    a#register-text:hover {
+        color:  red;
+    }
+
+    tr.message {
+        color: #d60000;
+        font-size: 20px;
+    }
+
+    #error-msg {
+        text-align: center;
+        padding-left: 15%;
+    }
+
+    a#register-text {
+        text-decoration: none;
+        text-align: left;
+        margin-left: 200px;
+        display: inline-block;
+        padding-top: 20px;
+        font-size: 26px;
+        color: white;
+        opacity: 2.0;
+    }
+
+    h2#header-text {
+      text-align: left;
+      margin-left: 30px;
+      margin-bottom: 20px;
+      display: inline-block;
+      padding-top: 2%;
+      font-size: 56px;
+      color: white;
+    }
+
+
+
